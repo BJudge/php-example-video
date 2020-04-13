@@ -88,6 +88,56 @@
 
     Answer: <?php echo $_GET["number1"] + $_GET["number2"]?>
 
+    <! Mads Lib Game >
+    <br>
+    <br>
+
+    <form action="firstfile.php" action="get">
+      Colour: <input type="text" name="colour"> <br>
+      Plural Noun: <input type="text" name="pluralNoun"> <br>
+      Celebrity: <input type="text" name="celebrity"> <br>
+      <input type="submit">
+    </form>
+    <?php
+    $colour = $_GET["colour"];
+    $pluralNoun = $_GET["pluralNoun"];
+    $celebrity = $_GET['celebrity'];
+    echo "Roses are $colour<br>";
+    echo "$pluralNoun are blue<br>";
+    echo "I love $celebrity<br>";
+     ?>
+     <br><br><br><br>
+     <!URL PARAMETERS>
+     <form action="firstfile.php" method="get">
+       Name: <input type="text" name="name"> <br>
+       <input type="submit">
+     </form>
+     <br><br>
+     <?php
+     echo $_GET["name"]
+      ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 </html>
